@@ -23,7 +23,7 @@ $.fn.checked = function(checked, unchecked)
 
 		if (typeof checked == "boolean")
 		{
-			input.attr('checked', checked).trigger('change');
+			input.attr('checked', checked).prop('checked', checked).trigger('change');
 			return;
 		}
 
